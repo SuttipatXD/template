@@ -1,0 +1,35 @@
+{
+  "name": "playwright-ts-template",
+  "version": "1.0.0",
+  "description": "Enterprise Playwright TypeScript template with POM and smart fixtures",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:api": "playwright test tests/api",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:headed": "playwright test --headed",
+    "report:html": "playwright show-report",
+    "report:allure": "allure serve allure-results",
+    "report:allure:generate": "allure generate allure-results --clean -o allure-report",
+    "codegen": "playwright codegen",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.3",
+    "allure-commandline": "^2.42.1",
+    "allure-playwright": "^3.10.0",
+    "dotenv": "^17.4.2",
+    "typescript": "^6.0.3"
+  }
+}
