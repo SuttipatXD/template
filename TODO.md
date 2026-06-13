@@ -196,6 +196,38 @@ TEST_USER_PASSWORD=yourpassword
 
 ---
 
+## Template Setup Status
+
+สิ่งที่ **สร้างเสร็จแล้ว** ใน template นี้:
+
+### ✅ Phase 0 — Template พร้อมใช้แล้ว
+
+- [x] Scaffold — `package.json`, `tsconfig.json`, `.gitignore`, `.env.example`
+- [x] `playwright.config.ts` — 5 browser projects, timeouts, allure + html reporters
+- [x] `src/pages/BasePage.ts` — abstract base class
+- [x] `src/fixtures/networkBlockList.ts` — ~25 analytics/tracking patterns
+- [x] `src/fixtures/index.ts` — auto-block + lazy page fixtures + re-export `expect`
+- [x] `src/pages/LoginPage.ts` — ตัวอย่าง POM (readonly locators)
+- [x] `src/pages/DashboardPage.ts` — ตัวอย่าง POM (component composition)
+- [x] `src/pages/components/TableComponent.ts`
+- [x] `src/pages/components/NavbarComponent.ts`
+- [x] `src/helpers/api.helper.ts`
+- [x] `src/helpers/auth.helper.ts`
+- [x] `src/helpers/random.helper.ts`
+- [x] `src/data/users.ts` + `src/data/constants.ts`
+- [x] `src/types/index.ts`
+- [x] `src/auth/auth.setup.ts` — global storageState setup
+- [x] `playwright/.auth/.gitkeep`
+- [x] `tests/smoke/login.spec.ts` — ตัวอย่าง smoke test
+- [x] `tests/regression/dashboard.spec.ts` — ตัวอย่าง regression test
+- [x] `tests/api/users.api.spec.ts` — ตัวอย่าง API test
+- [x] `.github/workflows/playwright.yml` — CI pipeline
+- [x] `.github/workflows/scheduled.yml` — nightly regression
+- [x] `README.md`
+- [x] `npm run type-check` — ผ่านสะอาด ✓
+
+---
+
 ## Implementation Checklist
 
 ทำตามลำดับนี้เมื่อนำ template ไปใช้กับโปรเจกต์จริง:
